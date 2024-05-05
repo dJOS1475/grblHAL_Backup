@@ -1,5 +1,5 @@
 # grblHAL_Backup
-My grblHAL Config Backup
+My grblHAL Config Backup for the MKS DLC32 v2.x
 
 Im using a4988 Stepper Drivers with 1.8 degree Stepper motors from LDO and a grbl_spd spindle controller running a Makita Router.
 
