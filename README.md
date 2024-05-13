@@ -11,5 +11,8 @@ You can also find it here: https://github.com/makerbase-mks/MKS-DLC32/tree/main/
 The rest of the config is the same as any other board:
 https://github.com/grblHAL/core/wiki/First-Run-Grbl-Settings
 
+The best software to configure grblHAL is IoSender. It will let you configure the wifi settings and all the stepper direction settings very easily. It works via USB and also Wifi once that is configured.
+https://github.com/terjeio/ioSender
+
 My 3018 CNC mods can be found on Printables:
 https://www.printables.com/@djos_1475_171511/models?query=cnc
