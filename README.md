@@ -18,3 +18,6 @@ https://github.com/terjeio/ioSender
 
 My 3018 CNC mods can be found on Printables:
 https://www.printables.com/@djos_1475_171511/models?query=cnc
+
+My CNC machine making something:
+https://youtu.be/gauJ4TA8BZ8
