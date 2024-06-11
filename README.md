@@ -9,7 +9,7 @@ NOTE: When flashing the DLC32, you must remove the MKS touch-screen if you have 
 
 The "MKS Laser Tool" is the best flashing software I've found, and I've copied it to my GitHub repo as it's a PITA to locate.
 
-The settings for MKS Laser Tool are in the two "MKS Laser Tool" png files inn this repo.
+The settings for MKS Laser Tool are in the two "MKS Laser Tool" png files in this repo.
 
 You can also find it here: https://github.com/makerbase-mks/MKS-DLC32/tree/main/MKS-DLC32-main/firmware/tool
 
