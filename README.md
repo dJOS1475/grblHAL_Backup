@@ -7,6 +7,12 @@ Im using a4988 Stepper Drivers with 1.8 degree Stepper motors from LDO and a grb
 To flash the firmware, use the MKS Laser Tool and a USB cable to flash my "mks_dlc32_gh_fw.bin" file. 
 
 The settings for MKS Laser Tool are as follows:
+<p align="left">
+  <a>
+    <img src="https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2001.png" height="467">
+    <img src="https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2002.png" height="662">
+  </a>
+</p>
 https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2001.png
 https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2002.png
 
