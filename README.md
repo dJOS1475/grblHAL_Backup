@@ -43,9 +43,5 @@ https://github.com/terjeio/ioSender
 https://www.printables.com/@djos_1475_171511/models?query=cnc
 
 # My CNC machine making something:
-https://youtu.be/gauJ4TA8BZ8
-<p align="left">
-  <a>
-    <video src="https://www.youtube.com/embed/gauJ4TA8BZ8?si=c97EmU_MCmRfzMBN">
-  </a>
-</p>
+https://youtu.be/gauJ4TA8BZ8?si=2GetAi0UkMIHleRA
+
