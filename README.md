@@ -10,11 +10,10 @@ The settings for MKS Laser Tool are as follows:
 <p align="left">
   <a>
     <img src="https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2001.png" height="467">
+    
     <img src="https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2002.png" height="662">
   </a>
 </p>
-https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2001.png
-https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2002.png
 
 NOTE: When flashing the DLC32, you must remove the MKS touch-screen if you have one. It will prevent you from flashing the board and the board from booting with non-OEM firmware. 
 
@@ -30,7 +29,12 @@ If you wish to compile your own custom grblHAL firmware, or just update to a new
 http://svn.io-engineering.com:8080
 
 And the you will need to use the “CombineBin” function in the "ESP32 Download tool" to join the 3 files into a single binary using the settings as shown:
-https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/IMG_1040.png
+
+<p align="left">
+  <a>
+    <img src="https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/IMG_1040.png" height="847">
+  </a>
+</p>
 
 # Configure grblHAL
 The best software to configure grblHAL is IoSender. It will let you configure the wifi settings and all the other settings very easily. It works via USB and also Wifi once that is configured.
