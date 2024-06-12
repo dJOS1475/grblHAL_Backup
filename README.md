@@ -27,7 +27,7 @@ https://github.com/grblHAL/core/wiki/First-Run-Grbl-Settings
 If you wish to compile your own custom grblHAL firmware, or just update to a newer version, you can use the grblHAL Web Builder here:
 http://svn.io-engineering.com:8080
 
-And the you will need to use the “CombineBin” function in the "ESP32 Download tool" to join the 3 files into a single binary using the settings as shown:
+And then you will need to use the “CombineBin” function in the "ESP32 Download tool" to join the 3 files into a single binary using the settings as shown:
 
 <p align="left">
   <a>
