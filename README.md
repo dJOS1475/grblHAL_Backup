@@ -10,7 +10,6 @@ The settings for MKS Laser Tool are as follows:
 <p align="left">
   <a>
     <img src="https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2001.png" height="467">
-    
     <img src="https://raw.githubusercontent.com/dJOS1475/grblHAL_Backup/main/MKS%20Laser%20Tool%2002.png" height="662">
   </a>
 </p>
