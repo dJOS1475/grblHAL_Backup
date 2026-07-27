@@ -1,0 +1,143 @@
+board: 6x CNC Controller
+name: 6x CNC Controller
+stepping:
+  engine: I2S_STREAM
+  idle_ms: 255
+  pulse_us: 4
+  dir_delay_us: 4
+  disable_delay_us: 0
+  segments: 6
+axes:
+  shared_stepper_disable_pin: NO_PIN
+  x:
+    steps_per_mm: 200
+    max_rate_mm_per_min: 1500
+    acceleration_mm_per_sec2: 1000
+    max_travel_mm: 280
+    soft_limits: true
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 0
+      feed_mm_per_min: 50
+      seek_mm_per_min: 1500
+      settle_ms: 250
+      seek_scaler: 1.1
+      feed_scaler: 1.1
+    motor0:
+      limit_neg_pin: gpio.35
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm: 2
+      standard_stepper:
+        step_pin: i2so.2
+        direction_pin: i2so.1
+        disable_pin: i2so.0
+  y:
+    steps_per_mm: 200
+    max_rate_mm_per_min: 1500
+    acceleration_mm_per_sec2: 1500
+    max_travel_mm: 300
+    soft_limits: true
+    homing:
+      cycle: 3
+      positive_direction: true
+      mpos_mm: 0
+      feed_mm_per_min: 50
+      seek_mm_per_min: 1500
+      settle_ms: 250
+      seek_scaler: 1.1
+      feed_scaler: 1.1
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: gpio.33
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm: 2
+      standard_stepper:
+        step_pin: i2so.5
+        direction_pin: i2so.4
+        disable_pin: i2so.7
+  z:
+    steps_per_mm: 400
+    max_rate_mm_per_min: 2000
+    acceleration_mm_per_sec2: 1000
+    max_travel_mm: 105
+    soft_limits: true
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 0
+      feed_mm_per_min: 50
+      seek_mm_per_min: 1500
+      settle_ms: 500
+      seek_scaler: 1.1
+      feed_scaler: 1.1
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: gpio.32
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm: 2
+      standard_stepper:
+        step_pin: i2so.10
+        direction_pin: i2so.9
+        disable_pin: i2so.8
+i2so:
+  bck_pin: gpio.22
+  data_pin: gpio.21
+  ws_pin: gpio.17
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+sdcard:
+  card_detect_pin: NO_PIN
+  cs_pin: gpio.5
+probe:
+  pin: gpio.34:low
+  toolsetter_pin: gpio.36:low
+coolant:
+  flood_pin: gpio.12
+  mist_pin: gpio.4
+  delay_ms: 0
+start:
+  must_home: false
+control:
+  safety_door_pin: NO_PIN
+  reset_pin: gpio.26:low
+  feed_hold_pin: NO_PIN
+  cycle_start_pin: NO_PIN
+  macro0_pin: NO_PIN
+  macro1_pin: NO_PIN
+  macro2_pin: NO_PIN
+  macro3_pin: NO_PIN
+uart1:
+  txd_pin: gpio.25
+  rxd_pin: gpio.27
+  rts_pin: NO_PIN
+  cts_pin: NO_PIN
+  baud: 1000000
+  mode: 8N1
+uart_channel1:
+  report_interval_ms: 75
+  uart_num: 1
+uart2:
+  txd_pin: gpio.15
+  rxd_pin: gpio.16
+  rts_pin: gpio.14
+  baud: 9600
+  mode: 8N1
+ModbusVFD:
+  uart_num: 2
+  modbus_id: 1
+  model: H100
+  tool_num: 0
+  cw_cmd: 05 00 49 ff 00 > 05 00 49 ff 00
+  ccw_cmd: 05 00 4a ff 00 > 05 00 4a ff 00
+  off_cmd: 05 00 4b ff 00 > 05 00 4b ff 00
+  set_rpm_cmd: 06 02 01 rpm*10/60  > echo
+  get_max_rpm_cmd: 03 00 05 00 01 > 03 02 maxrpm*60/10
+  get_min_rpm_cmd: 03 00 0b 00 01 > 03 02 minrpm*60/10
+  get_rpm_cmd: 03 02 20 00 01 > 03 02 rpm*60/10
